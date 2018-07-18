@@ -54,6 +54,12 @@ app.get('/',(req, res) => {             // '/'  is route of the folder  ---  (re
     })  
 })
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects Page'
+    })
+})
+
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page'
